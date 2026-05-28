@@ -1,0 +1,59 @@
+name: Installation problem
+description: Get help with setup, dependencies, PaddleOCR, PaddlePaddle, or FFmpeg.
+title: "[Install]: "
+labels: ["installation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for installation issues, especially PaddlePaddle, PaddleOCR, FFmpeg, or virtual environment setup.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What failed?
+      description: Describe the install step that failed.
+      placeholder: pip install -r requirements.txt failed while installing...
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Error output
+      description: Paste the relevant terminal output.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11, macOS 14, Ubuntu 22.04
+    validations:
+      required: true
+  - type: input
+    id: python
+    attributes:
+      label: Python version
+      placeholder: Python 3.11.8
+    validations:
+      required: true
+  - type: input
+    id: ffmpeg
+    attributes:
+      label: FFmpeg check
+      description: Output of ffmpeg -version, or say "not installed".
+      placeholder: ffmpeg version 7.1...
+  - type: input
+    id: paddle
+    attributes:
+      label: PaddlePaddle / PaddleOCR versions
+      placeholder: paddlepaddle 2.6.2, paddleocr 2.7.3, or "not installed"
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I tried upgrading pip, setuptools, and wheel.
+          required: false
+        - label: I checked the README installation notes.
+          required: true

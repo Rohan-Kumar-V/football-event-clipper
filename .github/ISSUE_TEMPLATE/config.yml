@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Documentation
+    url: https://github.com/Rohan-Kumar-V/football-event-clipper#readme
+    about: Check the README for setup, OCR calibration, VLM configuration, and output structure.

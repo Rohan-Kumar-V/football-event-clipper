@@ -1,0 +1,66 @@
+name: Event detection quality report
+description: Report missed events, false positives, or poor categorization.
+title: "[Detection]: "
+labels: ["detection-quality"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this when the system misses a football event, creates a bad candidate, or labels a clip incorrectly.
+        Please avoid sharing copyrighted/private video unless you have permission.
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: What kind of detection issue is this?
+      options:
+        - Missed goal
+        - Missed celebration
+        - Missed shot/chance
+        - Missed skill/dribble
+        - Missed stoppage/card/substitution/injury
+        - False positive candidate
+        - Wrong label/category
+        - OCR score read issue
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened, and what should have happened?
+    validations:
+      required: true
+  - type: input
+    id: timestamp
+    attributes:
+      label: Approximate video timestamp
+      placeholder: 12:34 or 754s
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs or metadata
+      description: Paste candidate metadata, OCR logs, or run summary if available.
+      render: text
+  - type: dropdown
+    id: vlm
+    attributes:
+      label: Was VLM enabled?
+      options:
+        - Yes
+        - No
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: calibration
+    attributes:
+      label: OCR calibration notes
+      description: For score/OCR problems, describe what you cropped for left/right score digits.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I removed private paths, video filenames, API keys, and secrets from this report.
+          required: true
