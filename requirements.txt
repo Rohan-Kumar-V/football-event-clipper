@@ -1,0 +1,7 @@
+imageio-ffmpeg>=0.4
+numpy>=2.0
+opencv-python>=4.8
+pandas>=2.0
+requests>=2.31
+paddleocr>=2.7
+paddlepaddle>=2.6

@@ -1,0 +1,45 @@
+{
+  "vlm": {
+    "model": "qwen/qwen3-vl-4b",
+    "api_base": "http://localhost:1234/v1",
+    "api_key_env": ""
+  },
+  "dashboard": {
+    "host": "127.0.0.1",
+    "port": 7860,
+    "input_dir": "input_videos",
+    "output_root": "clips",
+    "export_root": "final_clips_dashboard",
+    "calibration_root": "calibration/dashboard",
+    "default_calibration": "calibration/match/calibration.json",
+    "default_output_name": "match_dashboard"
+  },
+  "ingestion": {
+    "default_video": "input_videos/match.mp4",
+    "default_output": "clips/match_final",
+    "default_template_dir": "clips/templates",
+    "default_digit_boxes": "222,36,30,31;274,36,30,31",
+    "ocr_engine": "paddle-digits",
+    "team1": "ARG",
+    "team2": "FRA",
+    "frame_skip": 200,
+    "min_ocr_confidence": 0.9,
+    "max_replay_candidates": 12,
+    "max_stoppage_candidates": 24,
+    "max_skill_candidates": 20,
+    "max_chance_candidates": 18,
+    "stoppage_max_duration": 50.0,
+    "goal_pre_seconds": 20.0,
+    "goal_post_seconds": 35.0,
+    "celebration_pre_seconds": 4.0,
+    "celebration_post_seconds": 32.0
+  },
+  "broadcast_text": {
+    "sample_interval": 12.0,
+    "max_frames": 120
+  },
+  "validation": {
+    "min_confidence": 0.78,
+    "frames_per_clip": 6
+  }
+}

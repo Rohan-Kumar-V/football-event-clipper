@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+clips/
+input_videos/
+final_clips_dashboard/
+debug_scoreboard_crops/
+.paddlex/
+.runtime_home/
+*.egg-info/
+*.log
+batch_smoke_input/

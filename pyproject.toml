@@ -1,0 +1,26 @@
+[project]
+name = "football-clips-ingest"
+version = "0.1.0"
+description = "Reliability-first football match event ingestion and clipping."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "imageio-ffmpeg>=0.4",
+    "numpy>=2.0",
+    "opencv-python>=4.8",
+    "pandas>=2.0",
+    "requests>=2.31",
+]
+
+[project.optional-dependencies]
+ocr = [
+    "paddleocr>=2.7",
+    "paddlepaddle>=2.6",
+]
+
+[project.scripts]
+football-dashboard = "dashboard:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["football_ingest*"]
