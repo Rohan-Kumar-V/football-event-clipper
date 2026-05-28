@@ -13,6 +13,8 @@ The current workflow is dashboard-first:
 
 Nothing is uploaded by the dashboard. Video copy/upload means browser-to-local-server copy into this project.
 
+![Football Event Clipper dashboard](assets/dashboard-workbench.png)
+
 ## What It Detects
 
 The engine combines deterministic signals with optional VLM validation:
