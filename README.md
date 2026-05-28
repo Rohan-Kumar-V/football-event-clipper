@@ -14,7 +14,7 @@ The current workflow is dashboard-first:
 
 Nothing is uploaded by the dashboard. Video copy/upload means browser-to-local-server copy into this project.
 
-[Watch the demo video](https://github.com/Rohan-Kumar-V/football-event-clipper/releases/download/v0.1.0/Demo.mp4))
+[Download the demo video](https://github.com/Rohan-Kumar-V/football-event-clipper/releases/download/v0.1.0/Demo.mp4)
 
 ## What It Detects
 
