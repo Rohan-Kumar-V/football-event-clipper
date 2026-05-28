@@ -1,4 +1,5 @@
 # Football Clips Ingestion
+![Football Event Clipper dashboard](assets/Focus_Image.png)
 
 Reliability-first Python ingestion for football match videos. The system takes a local match video, detects football events and candidate moments, creates clips, and lets you review/export approved clips from a local dashboard.
 
@@ -13,7 +14,7 @@ The current workflow is dashboard-first:
 
 Nothing is uploaded by the dashboard. Video copy/upload means browser-to-local-server copy into this project.
 
-![Football Event Clipper dashboard](assets/Dashboard_UI.png)
+[Watch the demo video](assets/Demo.mp4)
 
 ## What It Detects
 
