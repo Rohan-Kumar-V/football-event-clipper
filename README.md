@@ -13,7 +13,7 @@ The current workflow is dashboard-first:
 
 Nothing is uploaded by the dashboard. Video copy/upload means browser-to-local-server copy into this project.
 
-![Football Event Clipper dashboard](assets/dashboard-workbench.png)
+![Football Event Clipper dashboard](assets/Dashboard_UI.png)
 
 ## What It Detects
 
